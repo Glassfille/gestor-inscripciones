@@ -1,0 +1,24 @@
+{
+  "name": "gestion-cursos-inscripciones",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Solucion integrada para Gestion de Cursos e Inscripciones: API, portal React y modulo publico Next.js.",
+  "workspaces": [
+    "api",
+    "portal-react",
+    "public-next"
+  ],
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:api dev:portal dev:public",
+    "dev:api": "npm --workspace api run dev",
+    "dev:portal": "npm --workspace portal-react run dev",
+    "dev:public": "npm --workspace public-next run dev",
+    "build": "npm --workspace portal-react run build && npm --workspace public-next run build",
+    "start:api": "npm --workspace api start",
+    "start:portal": "npm --workspace portal-react run preview",
+    "start:public": "npm --workspace public-next start"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

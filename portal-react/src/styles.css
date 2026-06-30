@@ -1,0 +1,368 @@
+:root {
+  color: #16202a;
+  background: #eef3f0;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(39, 105, 102, 0.22), transparent 38%),
+    radial-gradient(circle at 80% 20%, rgba(242, 174, 73, 0.22), transparent 26%),
+    #eef3f0;
+}
+
+.login-panel {
+  width: min(960px, 100%);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  overflow: hidden;
+  border: 1px solid #cad8d2;
+  border-radius: 8px;
+  background: #fbfcf8;
+  box-shadow: 0 24px 80px rgba(22, 32, 42, 0.14);
+}
+
+.login-copy {
+  min-height: 520px;
+  padding: 64px;
+  color: #fbfcf8;
+  background:
+    linear-gradient(rgba(12, 54, 55, 0.78), rgba(12, 54, 55, 0.88)),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80")
+      center/cover;
+}
+
+.login-copy h1 {
+  max-width: 480px;
+  margin: 16px 0;
+  font-size: clamp(2.4rem, 6vw, 4.7rem);
+  line-height: 0.95;
+}
+
+.login-copy p:last-child {
+  max-width: 440px;
+  line-height: 1.7;
+}
+
+.login-form {
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  padding: 48px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: #42515c;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cad8d2;
+  border-radius: 6px;
+  padding: 14px 16px;
+  background: #ffffff;
+  color: #16202a;
+}
+
+input:focus,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid rgba(242, 174, 73, 0.72);
+  outline-offset: 2px;
+}
+
+.primary-button,
+.ghost-button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.primary-button {
+  padding: 0 20px;
+  color: #102426;
+  background: #f2ae49;
+}
+
+.primary-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.ghost-button {
+  width: 100%;
+  color: #fbfcf8;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: #eef3f0;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 28px;
+  color: #fbfcf8;
+  background: #12383b;
+}
+
+.sidebar h1 {
+  margin: 10px 0 0;
+  font-size: 1.8rem;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #e3a63f;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: grid;
+  gap: 8px;
+}
+
+.nav-list a {
+  padding: 12px 14px;
+  border-radius: 6px;
+  color: #dce9e5;
+  text-decoration: none;
+}
+
+.nav-list a.active,
+.nav-list a:hover {
+  color: #102426;
+  background: #f2ae49;
+}
+
+.student-card {
+  margin-top: auto;
+  display: grid;
+  gap: 10px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.student-card span {
+  font-weight: 900;
+}
+
+.student-card small {
+  color: #b8cfca;
+}
+
+.main-content {
+  padding: 48px;
+}
+
+.page-section {
+  display: grid;
+  gap: 24px;
+}
+
+.page-heading h2,
+.detail-panel h2 {
+  margin: 8px 0 0;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 1;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.course-card,
+.detail-panel,
+.enrollment-row {
+  border: 1px solid #cad8d2;
+  border-radius: 8px;
+  background: #fbfcf8;
+}
+
+.course-card {
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px;
+}
+
+.course-card h3,
+.enrollment-row h3 {
+  margin: 14px 0 8px;
+  font-size: 1.35rem;
+}
+
+.course-card p,
+.detail-panel p,
+.enrollment-row p {
+  color: #52616b;
+  line-height: 1.6;
+}
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: #12383b;
+  background: #dce9e5;
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.course-meta,
+.detail-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+}
+
+.course-meta div,
+.detail-list div {
+  padding: 14px;
+  border-radius: 6px;
+  background: #eef3f0;
+}
+
+dt {
+  color: #60717a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+dd {
+  margin: 6px 0 0;
+  font-weight: 900;
+}
+
+.text-link {
+  color: #1f6764;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.detail-panel {
+  display: grid;
+  gap: 20px;
+  max-width: 880px;
+  padding: 32px;
+}
+
+.detail-list {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.enrollment-list {
+  display: grid;
+  gap: 14px;
+}
+
+.enrollment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px;
+}
+
+.enrollment-row time {
+  color: #60717a;
+  font-weight: 800;
+}
+
+.status-message {
+  border-radius: 6px;
+  padding: 12px 14px;
+  color: #12383b;
+  background: #dce9e5;
+  font-weight: 700;
+}
+
+.status-message.error {
+  color: #7b1d1d;
+  background: #f7dddd;
+}
+
+.status-message.success {
+  color: #165431;
+  background: #dbf2e5;
+}
+
+@media (max-width: 760px) {
+  .login-panel,
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .login-copy {
+    min-height: auto;
+    padding: 36px;
+  }
+
+  .login-form,
+  .main-content {
+    padding: 28px;
+  }
+
+  .sidebar {
+    position: static;
+    min-height: auto;
+  }
+
+  .enrollment-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
