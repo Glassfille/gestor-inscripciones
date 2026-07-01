@@ -6,8 +6,6 @@ Solucion academica para la PA4 de Programacion Web II. Integra un portal del est
 
 - Integrante 1: pendiente
 - Integrante 2: pendiente
-- Integrante 3: pendiente
-- Integrante 4: pendiente
 
 ## Stack
 
@@ -120,10 +118,8 @@ Agregar capturas en `screenshots/` antes de la entrega:
 
 | Integrante | Aporte principal |
 | --- | --- |
-| Integrante 1 | Portal React, rutas protegidas y login |
-| Integrante 2 | API REST, JWT e inscripciones |
-| Integrante 3 | Modulo publico Next.js |
-| Integrante 4 | README, evidencias, pruebas y sustentacion |
+| Integrante 1 | Portal React, rutas protegidas y login | Modulo publico Next.js |
+| Integrante 2 | API REST, JWT e inscripciones | README, evidencias, pruebas y sustentacion |
 
 ## Video de sustentacion
 
